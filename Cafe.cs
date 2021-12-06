@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Cafeteria
 {
-    class Cafe : Bebida 
+    class Cafe : Bebidas
     {
         public string opcao;
 
@@ -23,15 +25,11 @@ namespace Cafeteria
             Console.WriteLine("10A - Caramelo Macchiato Gelado - R$ 14,00");
             Console.WriteLine("S - Sair");
 
+
             string opcao;
             opcao = Console.ReadLine();
+            Console.WriteLine("Voce escolheu {0}", opcao);
 
-        }
-       public virtual void visualizarCafe()
-        {
-            Console.WriteLine("Voce escolheu {0}");
         }
     }
 }
-    
-
