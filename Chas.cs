@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Cafeteria
 {
-    class Chas : Bebida
+    class Chas : Bebidas
     {
         public void cadastrarChas()
         {
@@ -21,6 +23,8 @@ namespace Cafeteria
 
             string opcao;
             opcao = Console.ReadLine();
+            Console.WriteLine("Voce escolheu {0}", opcao);
         }
     }
 }
+
